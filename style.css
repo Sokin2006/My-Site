@@ -1,6 +1,10 @@
 body {
     background-color: #e5e7eb;
     font-family: arial, sans-serif;
+    min-width: 360px;
+    max-width: 800px;
+    margin: auto;
+
 }
 #titulo1{
     background-color: lightslategray;
@@ -13,6 +17,9 @@ body {
     border: none;
     border-radius: 10px;
     padding: 40px;
+    min-width: 360px;
+    max-width: 800px;
+    
 }
 
 #mysite {
@@ -27,6 +34,8 @@ body {
 
 #tabela2 {
     background-color: rgb(85, 103, 132);;
+    min-width: 360px;
+    max-width: 800px;
 }
 table{
     border: none
@@ -43,7 +52,7 @@ td {
 #tabela_projetos td:hover {
     background-color: gray;
     transition: 0.15s;
-    
+    margin: auto;
 }
 
 #sim{
@@ -61,7 +70,7 @@ td {
 
 #tabela_experiencia {
     display: block;
-    padding: 15px 15px;
+    margin: auto;
     border: 1.5px solid var(--border);
     color: var(--ink);
     text-decoration:none;
@@ -70,11 +79,12 @@ td {
     transition: background 0.15s;
     background: var(--ink);
     color: var(--paper);
+    
 }
 
-#educação {
+#habilidades {
     display: block;
-    padding: 15px 15px;
+    margin: auto;
     border: 1.5px solid var(--border);
     color: var(--ink);
     text-decoration:none;
@@ -83,6 +93,8 @@ td {
     transition: background 0.15s;
     background: var(--ink);
     color: var(--paper);
+    
+
 }
 
 a:hover {
@@ -92,8 +104,40 @@ a:hover {
 
 #fatec-logo {
    border-radius: 10px;
+   max-width: 100%;
+   height: auto;
 }
 
 #logo {
     border-radius: 100%;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
 }
+
+@media (max-width: 768px) {
+
+    td {
+        display: block;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    #mysite,
+    #contato {
+        text-align: center;
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+}
+
